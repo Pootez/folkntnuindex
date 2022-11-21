@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(10, 10, 10);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+
+div {
+    max-height: 100vh;
+}
+
+.link {
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: clamp(1.5em, 4vw, 5em);
+    padding: clamp(0.25em, 1vw, 1em) clamp(1em, 4vw, 4em);
+    text-decoration: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -20%;
+    transition: background-position 0.5s ease-out;
+}
+
+.link:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    
+}
+
+.link:hover {
+    background-position: 100%;
+    transition: background-position 0.5s ease-out;
+}
